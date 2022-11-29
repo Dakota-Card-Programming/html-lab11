@@ -1,0 +1,88 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    gap: 20px;
+}
+
+.cell{
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: white;
+    transition: 0.5s;
+}
+
+.cell:hover, .on{
+    transform: scale(1.05);
+}
+
+/*cell 1*/
+.cell:nth-child(1){
+    background-color: #10ac84;
+}
+
+.cell:nth-child(1):active, .on{
+    background-color: #1dd1a1;
+}
+
+/*cell 2*/
+.cell:nth-child(2){
+    background-color: #ee5253;
+}
+
+.cell:nth-child(2):active, .on{
+    background-color: #ff6b6b;
+}
+
+/*cell 3*/
+.cell:nth-child(3){
+    background-color: #f368e0;
+}
+
+.cell:nth-child(3):active, .on{
+    background-color: #ff9ff3;
+}
+
+/*cell 4*/
+.cell:nth-child(4){
+    background-color: #341f97;
+}
+
+.cell:nth-child(4):active, .on{
+    background-color: #5f27cd;
+}
+
+button{
+    background-color: #8395a7;
+    color: #fff;
+    padding: 1em;
+}
+
+button:hover{
+    background-color: #c8d6e5;
+    color: #333;
+}
